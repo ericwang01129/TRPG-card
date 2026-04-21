@@ -665,6 +665,79 @@ body::after {
   50%      { box-shadow: 0 0 0 8px rgba(127, 211, 224, 0); }
 }
 
+/* ---------- contacts ---------- */
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  padding: 22px 24px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  color: var(--c-ink);
+  position: relative;
+  overflow: hidden;
+}
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--c-accent);
+  background: rgba(18, 40, 55, 0.85);
+}
+.contact-card__icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(127, 211, 224, 0.1);
+  color: var(--c-accent);
+  border: 1px solid var(--c-border-2);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.contact-card:hover .contact-card__icon {
+  background: var(--c-accent);
+  color: #05141c;
+}
+.contact-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.contact-card__label {
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: var(--c-accent);
+  text-transform: uppercase;
+}
+.contact-card__value {
+  font-family: var(--f-serif);
+  font-size: 16px;
+  color: var(--c-ink);
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contact-card__hint {
+  font-size: 11px;
+  color: var(--c-ink-mute);
+  letter-spacing: 0.12em;
+}
+.contact-card.is-copied .contact-card__hint { color: var(--c-accent); }
+
 /* ---------- links ---------- */
 .links {
   display: grid;
@@ -812,6 +885,7 @@ body::after {
   }
 
   .links { grid-template-columns: 1fr; }
+  .contacts { grid-template-columns: 1fr; }
 
   .footer__inner {
     flex-direction: column;

@@ -25,6 +25,38 @@
   els.forEach((el) => io.observe(el));
 })();
 
+// Discord: open DM in native app, fallback to web profile
+(function () {
+  const el = document.getElementById("discord-link");
+  if (!el) return;
+  const userId = el.dataset.discordId;
+  const webUrl = `https://discord.com/users/${userId}`;
+  const appUrl = `discord://-/users/${userId}`;
+
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    // Try native app first
+    const hidden = document.createElement("iframe");
+    hidden.style.display = "none";
+    hidden.src = appUrl;
+    document.body.appendChild(hidden);
+
+    // Fallback to web after a short delay (app handler takes priority if installed)
+    const fallback = setTimeout(() => {
+      window.open(webUrl, "_blank", "noopener");
+    }, 600);
+
+    // If the tab loses focus quickly, the app opened — cancel the web fallback
+    const onBlur = () => {
+      clearTimeout(fallback);
+      window.removeEventListener("blur", onBlur);
+    };
+    window.addEventListener("blur", onBlur);
+
+    setTimeout(() => hidden.remove(), 1500);
+  });
+})();
+
 // Subtle parallax on background
 (function () {
   const layer = document.querySelector(".bg-layer");
