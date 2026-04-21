@@ -269,6 +269,8 @@ body::after {
   overflow: hidden;
   border: 1px solid var(--c-border-2);
   box-shadow: var(--shadow-2), 0 0 0 10px rgba(127, 211, 224, 0.05);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(127, 211, 224, 0.22) 0%, rgba(18, 40, 55, 0.85) 60%, rgba(7, 20, 29, 0.95) 100%);
 }
 .portrait-frame::before {
   content: "";
