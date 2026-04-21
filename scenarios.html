@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>可帶系統 / 劇本｜睿諳 Eric</title>
+<meta name="description" content="睿諳 Eric 目前可帶的 TRPG 系統與劇本列表，支援系統與 R-18 題材篩選。" />
+<link rel="icon" type="image/png" href="icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-scenarios">
+
+<div class="bg-layer" aria-hidden="true"></div>
+<div class="bg-veil" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="nav__brand" href="index.html">
+    <span class="nav__chibi" aria-hidden="true">
+      <img src="gm_portrait.png" alt="" />
+    </span>
+    <span class="nav__brand-text">
+      <span class="nav__mark">睿諳 · Eric</span>
+      <span class="nav__sub">TRPG 名片</span>
+    </span>
+  </a>
+  <button class="nav__toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="primary-nav">
+    <a href="index.html#about">關於</a>
+    <a href="index.html#style">帶團風格</a>
+    <a href="index.html#custom">設定原則</a>
+    <a href="scenarios.html" class="is-current">可帶系統</a>
+    <a href="index.html#contact">連結</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section section--first" id="run">
+    <div class="section__head">
+      <span class="section__index">　</span>
+      <h2 class="section__title">目前可帶系統 / 劇本</h2>
+      <p class="section__sub">Currently Available Scenarios</p>
+    </div>
+
+    <div class="filter" id="scenario-filter">
+      <div class="filter__row">
+        <span class="filter__label">系統篩選</span>
+        <div class="filter__chips">
+          <label class="chip"><input type="checkbox" value="DND 5e" checked /><span>DND 5e</span></label>
+          <label class="chip"><input type="checkbox" value="PbtA" checked /><span>PbtA</span></label>
+          <label class="chip"><input type="checkbox" value="BRP" checked /><span>BRP</span></label>
+          <label class="chip"><input type="checkbox" value="COJ" checked /><span>COJ</span></label>
+          <label class="chip"><input type="checkbox" value="其他" checked /><span>其他</span></label>
+        </div>
+        <button type="button" class="filter__clear" id="filter-clear">全選</button>
+      </div>
+      <div class="filter__row filter__row--r18">
+        <label class="toggle">
+          <input type="checkbox" id="filter-r18" />
+          <span class="toggle__track"><span class="toggle__thumb"></span></span>
+          <span class="toggle__label">顯示 R-18 / 敏感題材</span>
+        </label>
+        <span class="filter__count" id="filter-count"></span>
+      </div>
+    </div>
+
+    <div class="run-list" id="run-list">
+
+      <article class="run-item run-item--active" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">施特拉德的詛咒</h3>
+          <p class="run-item__meta">
+            <span>長團 · 預計語音 10–15 次</span>
+            <span>類型：哥德恐怖 / 戲劇向</span>
+          </p>
+          <p class="run-item__desc">
+            DND5E官方劇本。以沉浸感為核心，在巴羅維亞的濃霧下，
+            讓每個選擇都有份量。歡迎第一次玩 DND 的夥伴加入。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <a class="run-item run-item--link" href="https://hackmd.io/@ericwang01129/ByFCtxE6Wl" target="_blank" rel="noopener" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">終北大陸希伯利爾 ‧ 終焉大地的編年史</h3>
+          <p class="run-item__meta">
+            <span>長戰役 · 全 8 章 · 語音預計15次</span>
+            <span>類型：奇幻冒險 / 日式王道 / NPC 互動</span>
+          </p>
+          <p class="run-item__desc">
+            原 CoC 名本轉 DND 5e 版。玩家以考古學者之姿，在遠古文明希伯里爾滅亡後的動蕩年代中，
+            發掘歷史碎片。前半忠於原作，後半展開原創故事線，著重角色表現與 NPC 關係。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </a>
+
+      <article class="run-item" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">卡斯羅姆 · 萬聖之夜</h3>
+          <p class="run-item__meta">
+            <span>單次團 · 3 級 · 11/2 19:00</span>
+            <span>類型：歡樂整活 / 節慶鬧劇</span>
+          </p>
+          <p class="run-item__desc">
+            月海南端深山的卡斯羅姆村，每年落葉之月的最後一晚，村民會把最貴的寶石包進糖果紙獻給第一個敲門的「惡靈」──
+            而那些惡靈，其實是散塔林會所的特工。今年任務交到你們手上：戴上最詭異的面具、調到不人類的笑聲，
+            把那些想拆穿儀式的多管閒事者嚇到落荒而逃。讓自己的角色變得可怕吧！
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">米斯卓諾傳奇</h3>
+          <p class="run-item__meta">
+            <span>遠山城周遭</span>
+            <span>古老神話 / 探索</span>
+          </p>
+          <p class="run-item__desc">
+            遠山城的新首席領主 Vuhm Yestral 正在招募冒險者，尋求能聯絡柯曼斯爾王國精靈族、
+            促成互助盟約與尋找援助資源的人才。你轉向東部前進，在路上與抱持相同目的的冒險者相遇。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">德拉肯海姆（Drakkenheim）</h3>
+          <p class="run-item__meta">
+            <span>長戰役 · 黑暗奇幻 · 異界污染</span>
+            <span>類型：廢墟探索 / 恐怖 / 派系政治</span>
+          </p>
+          <p class="run-item__desc">
+            十五年前的一場隕星風暴摧毀了這座城市，徒留受異界魔法污染的廢土與潛伏其間的怪物。
+            諸神疏遠而沉默、神聖魔法不再源自神、奧術血脈成為權力與禁忌的根源——
+            夢幻的財富、失落的知識與強大神器，正等待著夠勇敢（或夠愚蠢）的冒險者踏入。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="DND 5e" data-r18="false">
+        <div class="run-item__system">DND 5e</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">阿斯魔蒂斯之鏈（Chains of Asmodeus）</h3>
+          <p class="run-item__meta">
+            <span>長戰役 · Lv.11–20 · 九層地獄</span>
+            <span>類型：高階黑暗奇幻 / 誘惑與墮落</span>
+          </p>
+          <p class="run-item__desc">
+            由 James Ohlen（Baldur's Gate 系列）與 Adrian Tchaikovsky 聯手打造的九層地獄官方長戰役。
+            冒險者以為自己是不請自來的滲透者，殊不知他們正是阿斯魔蒂斯棋局中的一枚棋子——
+            每一次屈服於誘惑，就為綁著他們與九獄的鎖鏈多加一環。
+            沿著血之河斯堤克斯穿越地獄九層，與大魔王一一交鋒，可銜接於《墜入阿弗納斯》之後。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <a class="run-item run-item--link" href="https://twtaichungtrpg.weebly.com/system-intro/night-witches4216" target="_blank" rel="noopener" data-system="PbtA" data-r18="false">
+        <div class="run-item__system">PbtA</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">夜襲魔女</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 二戰 · 蘇聯 588 夜間轟炸機團 · 可單次</span>
+            <span>類型：戰爭史詩 / 情感糾葛</span>
+          </p>
+          <p class="run-item__desc">
+            你是蘇聯 588 轟炸機團的新兵——那支活躍於蘇德前線的全女夜間轟炸機部隊。
+            白天面對人事糾葛與政治審查的拉扯，夜晚駕著木布雙翼機執行九死一生的任務，以戰績證明勇氣。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </a>
+
+      <article class="run-item" data-system="PbtA" data-r18="false">
+        <div class="run-item__system">PbtA</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">武林知心</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 武俠 / 江湖</span>
+            <span>類型：人情世故 / 門派恩怨 / 輕度武打</span>
+          </p>
+          <p class="run-item__desc">
+            以武俠為題的中文 TRPG 系統，重視角色之間的人情、道義與江湖關係。
+            行走於門派、鏢局與江湖傳聞之間，讓劍與情都有落處。歡迎委託自訂劇情。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="BRP" data-r18="false">
+        <div class="run-item__system">BRP</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">血色豪門之逃吧摯愛</h3>
+          <p class="run-item__meta">
+            <span>現代 · 4 人 · 語音預計4次</span>
+            <span>類型：PVP / 歡樂整活 / HO秘密團</span>
+          </p>
+          <p class="run-item__desc">
+            連續看了幾個月狗血總裁文後的發癲產物：邪魅霸道總裁、虐文女主、惡毒女配與敬業保潔的抽象總裁宇宙。
+            適合放得開、想飆演技與放飛自我的親友桌，請以圖個樂呵的心情入場。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="COJ" data-r18="false">
+        <div class="run-item__system">COJ</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">情感標本</h3>
+          <p class="run-item__meta">
+            <span>現代日本 · 1 PL · 4–6 小時</span>
+            <span>類型：情感向 / KPC 互動</span>
+          </p>
+          <p class="run-item__desc">
+            四月的城市悄悄流行起「浮游花」。KPC 被那些油中的花迷住，變得格外有活力，
+            也開始主動向 PC 說起花語。
+            建議與接續探索者同跑，帶著彼此間已有的感情入場。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="COJ" data-r18="false">
+        <div class="run-item__system">COJ</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">我們的伊甸園</h3>
+          <p class="run-item__meta">
+            <span>4 PL + KPC · 語音預計4-6次）</span>
+            <span>類型：封閉式 / 合作型秘密 HO / 重 RP</span>
+          </p>
+          <p class="run-item__desc">
+            夜幕拉下後，黑色虛空之外怪物開始歌唱——你們是巡迴馬戲團「維德」的團員，
+            而這座馬戲團的真正秘密是「怪物們」。為了 10 月 31 日第 100 場紀念公演，
+            你們停留在英國一處森林中，與團長、人魚明星及夥伴們過著安穩卻脆弱的日常。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="COJ" data-r18="false">
+        <div class="run-item__system">COJ</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">片麟</h3>
+          <p class="run-item__meta">
+            <span>現代 · 2 PL · 約 3 小時</span>
+            <span>類型：共犯羈絆 / LOST 中～高</span>
+          </p>
+          <p class="run-item__desc">
+            6 月 28 日，梅雨季落下的雨水淋濕了紫陽花。一名普通的高中生，將一名殘忍的殺人犯藏了起來──
+            這是一段不該被解開的羈絆。
+            「上帝牽起的羈絆最好不要解開，我們仍願做那希斯與風的孩子。」
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="COJ" data-r18="false">
+        <div class="run-item__system">COJ</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">聖土遺夢</h3>
+          <p class="run-item__meta">
+            <span>1953 年秋 · 英格蘭 · 漢普郡 · 貝爾廷森鎮</span>
+            <span>類型：非傳統神祕學 / 密契主義 / 重返未來1999同人</span>
+          </p>
+          <p class="run-item__desc">
+            因緣際會下，你們齊聚於英格蘭漢普郡的邊陲小鎮「貝爾廷森」。
+            這座本該百廢待興的小鎮在英格蘭的土地上顯得格格不入，暴雨傾盆而下，黑暗的洪流悄然湧動。
+            含基督宗教元素、密契主義象徵，以及意義不明的獻祭行為與強迫性儀式。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="其他" data-r18="false">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">銀劍的星辰騎士</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 雙人一組（ペア）</span>
+            <span>類型：日常 + 決鬥 / 超重 RP / 情感物語</span>
+          </p>
+          <p class="run-item__desc">
+            懷抱「不願讓步的願望」的騎士與命運的夥伴結成一對，
+            在日常與決鬥場之間譜寫屬於兩人的物語。強調角色關係、情感與戲劇張力——
+            願望、羈絆、青春與犧牲的舞台，歡迎來體驗系統。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="其他" data-r18="false">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">Double Cross 3rd</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 現代異能</span>
+            <span>類型：超能力戰鬥 / 日常 × 超人 / 理性代價</span>
+          </p>
+          <p class="run-item__desc">
+            日常內側的世界，「Renegade」病毒將人類改寫為超越者——你獲得了超越常理的能力，
+            同時也一步步以「人」的理性作為代價。在超人與人類之間，成為背叛者「Double Cross」，
+            為了仍想守護的事物而戰。歡迎來體驗系統。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="其他" data-r18="false">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">ゆうやけこやけ（夕燒小燒）</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 日系溫馨 / 小系町</span>
+            <span>類型：妖怪與人 / 日常 / 治癒系</span>
+          </p>
+          <p class="run-item__desc">
+            玩家扮演棲息於小鎮「小系町」的妖怪，在夕陽將鎮子染成橘紅的時刻，
+            輕輕介入人們生活中的小小煩惱。沒有戰鬥、沒有大反派，只有溫柔的日常與一點點神祕的溫度。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="其他" data-r18="false">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">Lancer</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 遠未來 · 聯盟曆 5016 年</span>
+            <span>類型：硬科幻機甲 / 敘事 × 戰術並重</span>
+          </p>
+          <p class="run-item__desc">
+            在人類歷經生態崩潰後擴張至群星的遙遠未來，你是駕駛著客製化機甲的「Lancer」。
+            場外為聯盟、企業、反抗者或自己而戰，場內以深度戰術盤面決勝負——敘事與戰棋並重的科幻戰役。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item" data-system="其他" data-r18="false">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">人與辦公室</h3>
+          <p class="run-item__meta">
+            <span>系統開放 · 現代職場 · 3–5 PL</span>
+            <span>類型：敘事向 / 荒誕喜劇 / 兩幕結構</span>
+          </p>
+          <p class="run-item__desc">
+            「如果你在人生中上過班，這套系統就是為你準備的。」
+            第一幕玩家扮演平凡職場員工，處理電腦當機、奧客、倉庫淹水等日常雜事賺取獎勵骰；
+            第二幕世界陷入混亂——也許是外星人入侵停車場、休息室開啟了地獄之門、
+            或停車場颳起滿是鱷魚的龍捲風。以 d6 驅動、輕規則重敘事的電影式一次性團。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item run-item--warn" data-system="PbtA" data-r18="true">
+        <div class="run-item__system">PbtA</div>
+        <div class="run-item__body">
+          <div class="run-item__title-row">
+            <h3 class="run-item__title">怪物心</h3>
+            <span class="run-item__badge">R-18 · 含敏感題材</span>
+          </div>
+          <p class="run-item__meta">
+            <span>系統開放 · 青春期 × 超自然</span>
+            <span>類型：人性 / 獸性 / 慾望與掙扎</span>
+          </p>
+          <p class="run-item__desc">
+            「當怪物擁有人性；當人類嶄露獸性。」學業的壓力、人際的拉扯，
+            而你——是藏在人群中的怪物，血液裡流淌著滾燙的飢餓。你接著打算怎麼做？
+          </p>
+          <p class="run-item__warn">
+            <strong>⚠ 嚴正提醒：</strong>本系統題材涉及青春期人性陰影、慾望、暴力與性向張力等敏感內容，
+            過程中可能出現不適情節。會以尊重與沉浸的方式呈現，過程中若有任何不適請隨時打斷。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item run-item--warn" data-system="COJ" data-r18="true">
+        <div class="run-item__system">COJ</div>
+        <div class="run-item__body">
+          <div class="run-item__title-row">
+            <h3 class="run-item__title">膿墮</h3>
+            <span class="run-item__badge">R-18 · 含敏感題材</span>
+          </div>
+          <p class="run-item__meta">
+            <span>現代 / 封閉村莊 · 學級會儀式</span>
+            <span>類型：利己主義 PVP / 沉浸向 / HO秘密團</span>
+          </p>
+          <p class="run-item__desc">
+            每十年一次的學級會：必須在學生之間選出一名「祭品」。以自己的利益優先的利己主義者才能活下來。
+          </p>
+          <p class="run-item__warn">
+            <strong>⚠ 嚴正提醒：</strong>本劇本含有大量兒少性侵害與極端霸凌情節，
+            包含但不限於誘姦、強姦與露骨性描寫。本團會以沉浸與真實的方式呈現那種絕望與無力感，
+            過程中若有任何不適請隨時打斷。請確認自身可接受後再決定是否入團。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item run-item--warn" data-system="其他" data-r18="true">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <div class="run-item__title-row">
+            <h3 class="run-item__title">永い後日談のネクロニカ（死靈年代記） ‧ 自訂 / 委託</h3>
+            <span class="run-item__badge">R-18 · 含敏感題材</span>
+          </div>
+          <p class="run-item__meta">
+            <span>系統開放 · 末日 · 死靈科技</span>
+            <span>類型：哥德恐怖 / 少女物語 / 精神壓力</span>
+          </p>
+          <p class="run-item__desc">
+            在輻射與生化兵器肆虐的荒涼末日，你是由死靈科技改造的少女形不死者，
+            與姊妹們一同徘徊於最後的世界。以「依戀」與精神壓力描寫心的崩解——殘酷、孤寂、卻哀豔。
+          </p>
+          <p class="run-item__warn">
+            <strong>⚠ 嚴正提醒：</strong>本系統以末日哥德為基調，含少女改造、肢解、精神折磨等殘酷意象與 R-18 題材描寫，
+            過程中若有任何不適請隨時打斷，請確認可接受後再入團。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item run-item--warn" data-system="其他" data-r18="true">
+        <div class="run-item__system">其他</div>
+        <div class="run-item__body">
+          <div class="run-item__title-row">
+            <h3 class="run-item__title">絕對隸奴</h3>
+            <span class="run-item__badge">R-18 · 成人向</span>
+          </div>
+          <p class="run-item__meta">
+            <span>系統開放 · 主規則繁中 · 附官方模組</span>
+            <span>類型：成人向 / 奴役主題 / 權力落差</span>
+          </p>
+          <p class="run-item__desc">
+            以奴役、支配與慾望為核心的成人向 TRPG 系統。
+            強烈建議與熟識的親友桌進行，並在入團前詳細確認底線與 X-card。
+          </p>
+          <p class="run-item__warn">
+            <strong>⚠ 嚴正提醒：</strong>本系統為明確的成人向／18 禁題材，包含大量露骨性描寫與奴役、凌辱等不對等權力設定。
+            僅開給成年、有共識且彼此信任的玩家；過程中若有任何不適請立即打斷。
+          </p>
+        </div>
+        <div class="run-item__status">
+          <span class="status-dot"></span>
+          <span>可開團</span>
+        </div>
+      </article>
+
+      <article class="run-item run-item--placeholder" data-always="true" aria-hidden="false">
+        <div class="run-item__system">更多系統</div>
+        <div class="run-item__body">
+          <h3 class="run-item__title">更多劇本籌備中</h3>
+          <p class="run-item__meta">
+            <span>本區將持續擴充</span>
+          </p>
+          <p class="run-item__desc">
+            未來將陸續開放更多系統／模組。若有想邀約的劇本或合作可直接聯絡我。
+          </p>
+        </div>
+        <div class="run-item__status run-item__status--muted">
+          <span class="status-dot status-dot--muted"></span>
+          <span>預留</span>
+        </div>
+      </article>
+
+      <p class="run-empty" id="run-empty">目前條件下沒有符合的系統 / 劇本。</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__left">© 睿諳 Eric · TRPG GM Card</p>
+    <p class="footer__right">Roll for initiative.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
