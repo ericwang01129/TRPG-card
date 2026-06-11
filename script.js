@@ -263,10 +263,20 @@
       ticking = true;
       requestAnimationFrame(() => {
         const y = window.scrollY * 0.08;
-        layer.style.transform = `scale(1.03) translateY(${y}px)`;
+        layer.style.transform = `translateY(calc(-50% + ${y}px))`;
         ticking = false;
       });
     },
     { passive: true }
   );
+})();
+
+// Slow the background video to 0.5x (browsers can reset playbackRate, so re-apply)
+(function () {
+  const v = document.querySelector("video.bg-layer");
+  if (!v) return;
+  const setRate = () => { v.playbackRate = 0.5; };
+  setRate();
+  v.addEventListener("loadedmetadata", setRate);
+  v.addEventListener("play", setRate);
 })();
