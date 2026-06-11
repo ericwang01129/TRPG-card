@@ -11,7 +11,8 @@ TRPG-card/
 ├── scenarios.json     ★ 劇本資料來源（唯一事實）
 ├── style.css          全站樣式
 ├── script.js          互動邏輯（漢堡選單、篩選、捲動顯現、Discord 深連結）
-├── background.png     hero 背景
+├── background.webm    hero 動態背景（影片）
+├── background.png     hero 背景靜態備援（影片載入前的 poster）
 ├── icon.png           頭像（圓框）
 ├── gm_portrait.png    Q 版立繪（nav 左側）
 └── README.md          本檔
